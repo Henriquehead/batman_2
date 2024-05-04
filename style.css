@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav {
+    width: 60%;
+    margin-right: 40px;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.banner-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+#banner {
+    background-image: url("https://legadodadc.com.br/wp-content/uploads/2021/11/FD1vP6lWQAMNHQl-1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    
+}
+
+.trailer {
+    width: 50%;
+    height: auto;
+   
+}
+
+#sinopse {
+    width: 50%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    margin-top: 40px;
+    color: white;
+    font-size: 19px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    width: 70%;
+    
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;   
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.banner1 {
+    background-image: url("./img/robert.jpg");    
+}
+
+.banner2 {
+    background-image: url("./img/zoe.jpg");    
+}
+
+.banner3 {
+    background-image: url("./img/jeffrey.webp");    
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+
+}
+
+span {
+    color: #fff;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    #banner {
+        
+        height: 200px;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        
+        background-position: 50% 0%;
+
+        margin: 0px 10px;
+    }
+
+    .banner-container {
+        height: 250px;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+        
+    }
+
+    .card {
+        height: 200px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .trailer {
+        width: 60%;
+        height: auto;
+    }
+
+    #sinopse {
+        width: 90%;
+        height: 200px;
+    }
+
+    .button {
+        width: 100px;
+        height: 30px;
+        font-size: 9px;
+        margin-top: 30px;
+    }
+
+ 
+
+
+}
