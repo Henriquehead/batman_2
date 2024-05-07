@@ -4,18 +4,24 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
     list-style: none;
     text-decoration: none;
     font-family: "Kdam Thmor Pro", sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 header {
     height: 120px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    position: fixed;
+    z-index: 1;
+    background-color: rgba( 0, 0, 0, 0.5);
 }
 
 nav {
@@ -201,6 +207,10 @@ span {
 }
 
 @media(max-width: 768px) {
+    header {
+        display: none;
+    }
+
     .footer-navigation {
         display: block;
     }
