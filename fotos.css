@@ -60,7 +60,7 @@ li:hover {
     height: 200%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;   
+    margin-top: 200px;   
 }
 
 .cards-content {
@@ -126,4 +126,20 @@ li:hover {
 
 .banner9 {
     background-image: url("./img/pictures/9.jpeg");    
+}
+
+
+@media(max-width: 768px) {
+ 
+
+
+
+
+    .cards-content {
+        margin-top: 0px;
+    }    
+
+    .card {
+        height: 200px;
+    }
 }

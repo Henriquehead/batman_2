@@ -20,6 +20,7 @@ header {
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    top: 0;
     z-index: 1;
     background-color: rgba( 0, 0, 0, 0.5);
 }
@@ -58,6 +59,7 @@ li:hover {
     height: 600px;
     display: flex;
     justify-content: center;
+    margin-top: 200px;
 }
 
 #banner {
@@ -255,9 +257,7 @@ span {
         
     }
 
-    .card {
-        height: 200px;
-    }
+  
 
     .description {
         font-size: 12px;
@@ -278,6 +278,19 @@ span {
         height: 30px;
         font-size: 9px;
         margin-top: 30px;
+    }
+
+    .actor-cards-container {
+        margin-top: 0;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;        
+    }
+
+    .trailer {
+        width: 100%;
     }
 
  
